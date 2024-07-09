@@ -1,0 +1,41 @@
+/*Create a program that converts temperatures between Celsius,Fahrenheit, and Kelvin. The program should allow the user to
+input a temperature in one scale and output the converted temperature in another scale*/
+
+#include<iostream>
+using namespace std;
+int main(){
+    int input;
+    float celsius,fahrenheit,kelvin;
+    cout<<"Enter 1 for inputing the temperature in Celsius ,2 for Fahrenheit and 3 for Kelvin:";
+    cin>>input;
+    if(input==1)
+    {
+        cout<<"Enter the Temperature in Celsius:";
+        cin>>celsius;
+        fahrenheit = (celsius * 9.0) / 5.0 + 32;
+        kelvin=celsius+273.15;
+        cout<<"Temperature in Fahrenheit="<<fahrenheit<<endl;
+        cout<<"Temperature in Kelvin="<<kelvin<<endl;
+    }
+    else if(input==2)
+    {
+        cout<<"Enter the Temperature in Fahrenheit:";
+        cin>>fahrenheit;
+        celsius=(fahrenheit-32)*5/9;
+        kelvin=((fahrenheit-32)*5/9)+273.15;
+        cout<<"Temperature in Celsius="<<celsius<<endl;
+        cout<<"Temperature in Kelvin="<<kelvin<<endl;
+    }
+    else if(input==3)
+    {
+        cout<<"Enter the Temperature in Kelvin:";
+        cin>>kelvin;
+        celsius=kelvin-273.15;
+        fahrenheit=1.8*(kelvin-273.15)+32;
+        cout<<"Temperature in Celsius="<<celsius<<endl;
+        cout<<"Temperature in Fahrenheit="<<fahrenheit<<endl;
+    }
+    else{
+        cout<<"Sorry!! You have entered wrong input"<<endl;
+    }
+}
