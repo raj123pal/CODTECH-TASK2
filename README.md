@@ -3,7 +3,7 @@
 * ID:CT08DS2479
 * Domain:C++ programming
 * Duration:June 15th,2024 to July 15th,2024
-* Mentor:Muzammil
+* Mentor:Neela Santhosh
 
 # Overview of Projects
 ##### Project:
